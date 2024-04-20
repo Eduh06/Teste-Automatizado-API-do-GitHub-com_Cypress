@@ -1,0 +1,8 @@
+# Arquivos não versionados
+
+/cypress/screenshots/
+/cypress/videos/
+/cypress/fixtures/
+/cypress/results/
+/cypress/reports/
+node_modules/
