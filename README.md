@@ -41,11 +41,12 @@ Antes de executar os testes, é necessário configurar algumas variáveis de amb
    Antes de instalar o Cypress, certifique-se de ter o Node.js instalado. Você pode baixá-lo e instalá-lo a partir do site oficial do Node.js: [https://nodejs.org/](https://nodejs.org/)
 
    ##### Instalar o Cypress:
-   Você pode instalar o Cypress globalmente usando o seguinte comando:
+   Você pode instalar o Cypress usando o seguinte comando:
 
    
        npm install cypress --save-dev
 
+OBS: Executar o comando dentro da pasta do projeto.
 
 ## Como executar os testes
 
@@ -64,7 +65,7 @@ Este comando iniciará a execução dos testes automatizados usando o Cypress no
 
 Para executar os testes no modo interativo (com interface gráfica), use o seguinte comando na raiz do projeto:
 
-      npx cypress open
+      npx cypress open --spec cypress/integration/TesteAPI.spec.js
 
 
 Esse comando abrirá o Cypress Test Runner, onde será possivel interagir com os testes em tempo real, verificar os resultados detalhados e depurar os testes conforme necessário.
