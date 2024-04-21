@@ -30,7 +30,7 @@ Antes de executar os testes, é necessário configurar algumas variáveis de amb
    
         {
          "env": {
-           "usuário": "SubstituirPeloNomeDeUsuárioDoGitHub",
+           "user": "SubstituirPeloNomeDeUsuárioDoGitHub",
            "TOKEN": "SubstituirPeloTokenDeAcesso"
          }
         }
