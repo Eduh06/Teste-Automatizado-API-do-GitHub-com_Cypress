@@ -33,7 +33,7 @@ describe('Testes da API do GitHub', () => {
   it('Deve criar uma issue no repositório recém-criado', () => {
       cy.request({
           method: 'POST',
-          url: `https://api.github.com/repos/${Cypress.env('usuário')}/${repositorioNome}/issues`,
+          url: `https://api.github.com/repos/${Cypress.env('user')}/${repositorioNome}/issues`,
           headers: {
               Authorization: `Bearer ${Cypress.env('TOKEN')}`,
           },
@@ -54,7 +54,7 @@ describe('Testes da API do GitHub', () => {
   it('Deve consultar a issue criada', () => {
       cy.request({
           method: 'GET',
-          url: `https://api.github.com/repos/${Cypress.env('usuário')}/${repositorioNome}/issues/${issueNumero}`,
+          url: `https://api.github.com/repos/${Cypress.env('user')}/${repositorioNome}/issues/${issueNumero}`,
           headers: {
               Authorization: `Bearer ${Cypress.env('TOKEN')}`,
           },
@@ -69,7 +69,7 @@ describe('Testes da API do GitHub', () => {
   it('Deve excluir o repositório', () => {
       cy.request({
           method: 'DELETE',
-          url: `https://api.github.com/repos/${Cypress.env('usuário')}/${repositorioNome}`,
+          url: `https://api.github.com/repos/${Cypress.env('user')}/${repositorioNome}`,
           headers: {
               Authorization: `Bearer ${Cypress.env('TOKEN')}`,
           },
@@ -81,7 +81,7 @@ describe('Testes da API do GitHub', () => {
   it('Deve consultar se o repositório foi eliminado', () => {
       cy.request({
           method: 'GET',
-          url: `https://api.github.com/repos/${Cypress.env('usuário')}/${repositorioNome}`,
+          url: `https://api.github.com/repos/${Cypress.env('user')}/${repositorioNome}`,
           headers: {
               Authorization: `Bearer ${Cypress.env('TOKEN')}`,
           },
