@@ -6,6 +6,7 @@ Este é um projeto de teste automatizado desenvolvido com o Cypress para testar 
 - Criação de issues
 - Consulta de repositórios e issues
 - Exclusão de repositórios
+- Consulta de Exclusão de repositório
  
 ## Como baixar o projeto
 
@@ -15,7 +16,7 @@ Para baixar o projeto, siga estas etapas:
 2. Navegue até o diretório onde deseja clonar o projeto.
 3. Execute o seguinte comando:
 
-   ##### git clone https://github.com/Eduh06/Teste-Automatizado-com-Cypress-para-API-do-GitHub
+       git clone https://github.com/Eduh06/Teste-Automatizado-API-do-GitHub-com_Cypress.git
 
 ## Configurações
 
@@ -27,16 +28,23 @@ Antes de executar os testes, é necessário configurar algumas variáveis de amb
 
 3. **Configuração do Cypress**: Adicione as variáveis de ambiente necessárias ao arquivo `cypress.json`. 
    
-   {
-     "env": {
-       "usuário": "SubstituirPeloNomeDeUsuárioDoGitHub",
-       "TOKEN": "SubstituirPeloTokenDeAcesso"
-     }
-   }
+        {
+         "env": {
+           "usuário": "SubstituirPeloNomeDeUsuárioDoGitHub",
+           "TOKEN": "SubstituirPeloTokenDeAcesso"
+         }
+        }
 
-4. **Cypress**: Certifique-se de ter o Cypress instalado no seu ambiente de desenvolvimento. Se não tiver, você pode instalá-lo globalmente usando o seguinte comando:
+4. **Cypress**: Certifique-se de ter o Cypress e o Node.js instalados no seu ambiente de desenvolvimento. Se não tiver, você pode instalá-los seguindo os passos abaixo:
 
-##### npm install cypress --save-dev
+   ##### Instalar o Node.js:
+   Antes de instalar o Cypress, certifique-se de ter o Node.js instalado. Você pode baixá-lo e instalá-lo a partir do site oficial do Node.js: [https://nodejs.org/](https://nodejs.org/)
+
+   ##### Instalar o Cypress:
+   Você pode instalar o Cypress globalmente usando o seguinte comando:
+
+   
+       npm install cypress --save-dev
 
 
 ## Como executar os testes
@@ -47,7 +55,7 @@ Após configurar as variáveis de ambiente, você pode escolher entre duas manei
 
 Para executar os testes no modo headless (sem interface gráfica), use o seguinte comando na raiz do projeto:
 
-##### npx cypress run
+     npx cypress run
 
 
 Este comando iniciará a execução dos testes automatizados usando o Cypress no modo headless. Os resultados serão exibidos no console.
@@ -56,7 +64,7 @@ Este comando iniciará a execução dos testes automatizados usando o Cypress no
 
 Para executar os testes no modo interativo (com interface gráfica), use o seguinte comando na raiz do projeto:
 
-##### npx cypress open
+      npx cypress open
 
 
 Esse comando abrirá o Cypress Test Runner, onde será possivel interagir com os testes em tempo real, verificar os resultados detalhados e depurar os testes conforme necessário.
