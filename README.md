@@ -38,7 +38,7 @@ Antes de executar os testes, é necessário configurar algumas variáveis de amb
 
 2. **Usuário do GitHub**: Seu nome de usuário do GitHub.
 
-3. **Configuração do Cypress**: Adicione as variáveis de ambiente necessárias ao arquivo `cypress.json`. 
+3. **Configuração do Cypress**: Adicione as variáveis de ambiente necessárias ao arquivo `cypress.config.js`. 
    
         {
          "env": {
@@ -61,6 +61,8 @@ Antes de executar os testes, é necessário configurar algumas variáveis de amb
 OBS: Executar o comando dentro da pasta do projeto. Você pode acessar através do comando :
 
       cd Teste-Automatizado-API-do-GitHub-com_Cypress
+
+OBS 2: Para a execução dos testes, é necessário ter, no mínimo, o Cypress na versão 10 ou superior.
 
 ## Como executar os testes
 
